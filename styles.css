@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4A148C;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.form-section {
+    flex: 1;
+    margin-right: 2em;
+}
+
+#productForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#productForm input, #productForm button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+#productForm button {
+    background-color: #283593;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#productForm button:hover {
+    background-color: #1A237E;
+}
+
+.product-list {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1em;
+    width: calc(33.333% - 1em);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card p {
+    margin: 0.5em 0;
+}
+
+.product-card button {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: darkred;
+}
+
+footer {
+    background-color: #4A148C;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
